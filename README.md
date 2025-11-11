@@ -1,0 +1,347 @@
+[index.html](https://github.com/user-attachments/files/23480546/index.html)
+[css:style.css](https://github.com/user-attachments/files/23480547/css.style.css)
+:root {
+  --bg: #F7F4F1;            /* Sandstone Beige */
+  --text: #1C2430;          /* Deep Charcoal */
+  --accent: #F46B5A;        /* Catalyst Coral */
+  --accent-dark: #1C2430;   /* Charcoal for contrast */
+  --brand-blue: #214A75;    /* CATALYST BLUE (new) */
+  --muted: #7D7C78;         /* Soft gray for subtitles */
+  --secondary: #E0DDD9;     /* Taupe divider */
+  --soft: #F0EBE5;          /* Soft Clay */
+  --max-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header {
+  padding: 64px 20px 24px;
+  background: #FBFAF8;
+  border-bottom: 1px solid var(--secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* CATALYST BLUE + CORAL GRADIENT */
+  background: linear-gradient(
+    135deg,
+    rgba(33, 74, 117, 0.12) 0%,
+    rgba(244, 107, 90, 0.10) 40%,
+    rgba(33, 74, 117, 0.18) 100%
+  );
+  z-index: 0;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+  color: var(--brand-blue); /* CATALYST BLUE */
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(34px, 5vw, 44px);
+  line-height: 1.1;
+  margin: 12px 0 12px;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+h2 {
+  font-size: clamp(22px, 3vw, 26px);
+  margin: 40px 0 8px;
+  font-weight: 600;
+  color: var(--brand-blue); /* CATALYST BLUE FOR SECTION TITLES */
+}
+
+h3 {
+  font-size: 18px;
+  margin: 28px 0 4px;
+  font-weight: 600;
+  color: var(--accent);      /* Coral for sub-sections */
+}
+
+p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 520px;
+}
+
+main {
+  padding: 32px 20px 60px;
+}
+
+blockquote {
+  margin: 24px 0;
+  padding: 12px 18px;
+  border-left: 3px solid var(--accent);
+  background: var(--soft);
+  font-style: italic;
+  font-size: 14px;
+}
+
+.section {
+  margin: 40px 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--secondary);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--brand-blue); /* CATALYST BLUE LABELS */
+  margin-bottom: 12px;
+  background: #fff8f6;
+}
+
+.small-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.toc {
+  margin: 20px 0 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--soft);
+  font-size: 13px;
+  border: 1px solid rgba(33, 74, 117, 0.15); /* thin blue outline */
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 0;
+  columns: 2;
+  column-gap: 40px;
+}
+
+.toc li {
+  margin: 4px 0;
+}
+
+a {
+  color: var(--brand-blue);   /* LINKS IN BLUE */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);       /* HOVER IN CORAL */
+}
+
+.data-insight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin: 12px 0 4px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--soft);
+  font-size: 13px;
+  border: 1px solid rgba(33, 74, 117, 0.10); /* soft blue frame */
+}
+
+.pill-title {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.footer {
+  border-top: 1px solid var(--secondary);
+  padding: 18px 20px 28px;
+  font-size: 12px;
+  color: var(--muted);
+  background: #FBFAF8;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .toc ul {
+    columns: 1;
+  }
+}
+
+/* subtle animation for scroll */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stats highlight */
+.stats-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-top: 3px solid var(--brand-blue); /* blue accent bar */
+}
+
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent);  /* coral numbers */
+  display: block;
+}
+
+.stat-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+/* Progress bar */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand-blue), var(--accent)); /* BLUE → CORAL */
+  z-index: 1000;
+  transition: width 0.2s ease;
+}
+
+/* Back to top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--brand-blue); /* BLUE */
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+  background: var(--accent); /* hover coral */
+}
+
+/* Share button */
+.share-container {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 99;
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent); /* coral */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.share-btn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.share-btn:hover {
+  transform: scale(1.1);
+  background: var(--brand-blue); /* hover to blue */
+}
+
+.share-tooltip {
+  position: absolute;
+  right: 50px;
+  background: var(--accent-dark);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.share-btn:hover .share-tooltip {
+  opacity: 1;
+}
