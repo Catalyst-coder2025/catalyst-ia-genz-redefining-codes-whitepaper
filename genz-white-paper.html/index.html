@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gen Z – Redefining the Codes | Catalyst Insight Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A Catalyst Insight Agency white paper on how Generation Z is redefining the codes of culture, work, communication and the future." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F7F4F1;            /* Sandstone Beige */
+      --text: #1C2430;          /* Deep Charcoal */
+      --accent: #F46B5A;        /* Catalyst Coral */
+      --accent-dark: #1C2430;   /* Charcoal for contrast */
+      --brand-blue: #214A75;    /* CATALYST BLUE (new) */
+      --muted: #7D7C78;         /* Soft gray for subtitles */
+      --secondary: #E0DDD9;     /* Taupe divider */
+      --soft: #F0EBE5;          /* Soft Clay */
+      --max-width: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    header {
+      padding: 64px 20px 24px;
+      background: #FBFAF8;
+      border-bottom: 1px solid var(--secondary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* CATALYST BLUE + CORAL GRADIENT */
+      background: linear-gradient(
+        135deg,
+        rgba(33, 74, 117, 0.12) 0%,
+        rgba(244, 107, 90, 0.10) 40%,
+        rgba(33, 74, 117, 0.18) 100%
+      );
+      z-index: 0;
+    }
+
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 11px;
+      color: var(--brand-blue); /* CATALYST BLUE */
+      font-weight: 600;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 44px);
+      line-height: 1.1;
+      margin: 12px 0 12px;
+      font-weight: 700;
+      color: var(--accent-dark);
+    }
+
+    h2 {
+      font-size: clamp(22px, 3vw, 26px);
+      margin: 40px 0 8px;
+      font-weight: 600;
+      color: var(--brand-blue); /* CATALYST BLUE FOR SECTION TITLES */
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 28px 0 4px;
+      font-weight: 600;
+      color: var(--accent);      /* Coral for sub-sections */
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--muted);
+      max-width: 520px;
+    }
+
+    main {
+      padding: 32px 20px 60px;
+    }
+
+    blockquote {
+      margin: 24px 0;
+      padding: 12px 18px;
+      border-left: 3px solid var(--accent);
+      background: var(--soft);
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--secondary);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--brand-blue); /* CATALYST BLUE LABELS */
+      margin-bottom: 12px;
+      background: #fff8f6;
+    }
+
+    .small-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .toc {
+      margin: 20px 0 0;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--soft);
+      font-size: 13px;
+      border: 1px solid rgba(33, 74, 117, 0.15); /* thin blue outline */
+    }
+
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0 0;
+      columns: 2;
+      column-gap: 40px;
+    }
+
+    .toc li {
+      margin: 4px 0;
+    }
+
+    a {
+      color: var(--brand-blue);   /* LINKS IN BLUE */
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent);       /* HOVER IN CORAL */
+    }
+
+    .data-insight {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin: 12px 0 4px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: var(--soft);
+      font-size: 13px;
+      border: 1px solid rgba(33, 74, 117, 0.10); /* soft blue frame */
+    }
+
+    .pill-title {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .footer {
+      border-top: 1px solid var(--secondary);
+      padding: 18px 20px 28px;
+      font-size: 12px;
+      color: var(--muted);
+      background: #FBFAF8;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .toc ul {
+        columns: 1;
+      }
+    }
+
+    /* subtle animation for scroll */
+    section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Stats highlight */
+    .stats-highlight {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 20px 0;
+    }
+    
+    .stat-box {
+      flex: 1;
+      min-width: 120px;
+      text-align: center;
+      padding: 12px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-top: 3px solid var(--brand-blue); /* blue accent bar */
+    }
+    
+    .stat-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--accent);  /* coral numbers */
+      display: block;
+    }
+    
+    .stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+    
+    /* Progress bar */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--brand-blue), var(--accent)); /* BLUE → CORAL */
+      z-index: 1000;
+      transition: width 0.2s ease;
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--brand-blue); /* BLUE */
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 18px;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.2s ease;
+      z-index: 100;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    
+    .back-to-top.visible {
+      opacity: 1;
+    }
+    
+    .back-to-top:hover {
+      transform: translateY(-2px);
+      background: var(--accent); /* hover coral */
+    }
+    
+    /* Share button */
+    .share-container {
+      position: fixed;
+      bottom: 70px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 99;
+    }
+    
+    .share-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent); /* coral */
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    
+    .share-btn.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .share-btn:hover {
+      transform: scale(1.1);
+      background: var(--brand-blue); /* hover to blue */
+    }
+    
+    .share-tooltip {
+      position: absolute;
+      right: 50px;
+      background: var(--accent-dark);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+    
+    .share-btn:hover .share-tooltip {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress-bar"></div>
+  
+  <header>
+    <div class="header-bg"></div>
+    <div class="wrap">
+      <div class="eyebrow">Catalyst Insight Agency · White Paper</div>
+      <h1>Gen Z – Redefining the Codes</h1>
+      <p class="subtitle">
+        A Catalyst IA insight paper on how Generation Z is reshaping culture, work, communication, and the future — from designers of new realities to explorers of new frontiers.
+      </p>
+      <div class="toc">
+        <div class="small-label">Sections</div>
+        <ul>
+          <li><a href="#intro">1. Introduction</a></li>
+          <li><a href="#definition">2. Defining a Generation</a></li>
+          <li><a href="#riseup">3. The Rise-Up Generation</a></li>
+          <li><a href="#shifts">4. Cultural Shifts</a></li>
+          <li><a href="#codes">5. Emerging Codes</a></li>
+          <li><a href="#systems">6. Redefining Systems</a></li>
+          <li><a href="#architects-explorers">7. Designers → Explorers</a></li>
+          <li><a href="#about-cia">8. About Catalyst IA</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <!-- 1. INTRODUCTION -->
+      <section id="intro" class="section">
+        <span class="tag">1 · Introduction</span>
+        <h2>The Era of Redefinition</h2>
+        <p><strong>Every generation believes it's different. This one truly is.</strong></p>
+        <p>Gen Z was born into disruption — climate anxiety, economic instability, and digital abundance. They have never known a world without search bars, without a screen between them and reality. They've turned hyperconnectivity into curiosity, chaos into creativity, and crisis into culture.</p>
+        <p><strong>This paper decodes the formative forces behind this generation and provides a strategic roadmap for engaging with them as consumers, employees, learners and citizens.</strong> It is a guide to navigating the new paradigm they are building — and to understanding how their mindset is quietly reshaping the systems we operate in.</p>
+        <blockquote>"Understanding Gen Z isn't about youth — it's about understanding where the world is heading."</blockquote>
+      </section>
+
+      <!-- 2. DEFINING A GENERATION -->
+      <section id="definition" class="section">
+        <span class="tag">2 · Defining a Generation</span>
+        <h2>The Context of Birth</h2>
+        <p><strong>Timing:</strong> Born between <strong>1997 and 2012</strong>, Gen Z follows Millennials and precedes Generation Alpha.</p>
+        <p><strong>Size:</strong> Nearly <strong>2 billion individuals</strong>, or around <strong>25% of the global population</strong>. In Africa, they represent about <strong>300 million</strong>, and in Morocco roughly <strong>8.6 million</strong> — one in four citizens.</p>
+        
+        <div class="stats-highlight">
+          <div class="stat-box">
+            <span class="stat-number">1997-2012</span>
+            <span class="stat-label">Birth Years</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">2B+</span>
+            <span class="stat-label">Global Population</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">25%</span>
+            <span class="stat-label">Of World Population</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">8.6M</span>
+            <span class="stat-label">In Morocco</span>
+          </div>
+        </div>
+        
+        <p>A generation is not a demographic label — it is a <strong>collective state of mind</strong>, shaped by shared events and technologies.</p>
+        <p>The worldview of Gen Z was forged in a <strong>constant state of crisis</strong>: they entered consciousness during the Great Recession, came of age during a global pandemic, developed their identity alongside the rise of generative AI, and witnessed intensifying climate disasters. And as they begin to enter the job market at scale, AI "goes mainstream" — not as a distant abstraction, but as a concrete force restructuring work, skills and value.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p>Over <strong>80% of Gen Z</strong> globally say they feel personally responsible for addressing social and environmental issues (<a href="https://www2.deloitte.com/global/en/pages/about-deloitte/articles/genzmillennialsurvey.html" target="_blank" rel="noopener noreferrer">Deloitte, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>This is the first generation to grow up <strong>hyper-informed yet deeply aware</strong>, constantly balancing realism and idealism — and turning anxiety into a demand for action.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. RISE-UP GENERATION -->
+      <section id="riseup" class="section">
+        <span class="tag">3 · Who They Are</span>
+        <h2>The Rise-Up Generation: Pragmatic Dreamers in an Age of Flux</h2>
+        <p>Gen Z are <strong>pragmatic dreamers</strong> — idealistic enough to challenge systems, realistic enough to build alternatives.</p>
+        <p>Raised in constant flux, they learned that <strong>uncertainty is not an exception but a condition</strong>. They seek agency more than comfort, authenticity more than approval.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>77%</strong> of Gen Zs prefer purpose-driven employers, and about <strong>60%</strong> have launched or plan to launch a side project before age 30 (<a href="https://www2.deloitte.com/global/en/pages/about-deloitte/articles/genzmillennialsurvey.html" target="_blank" rel="noopener noreferrer">Deloitte, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>They've turned self-reliance into identity — creating, monetizing and sharing as forms of survival, self-expression and security.</p>
+          </div>
+        </div>
+        <blockquote>"I don't want to wait 20 years to have impact. I want my life, my work and my side projects to mean something now." — Gen Z respondent, 21, Morocco</blockquote>
+        <blockquote>They don't wait for change — they prototype it.</blockquote>
+      </section>
+
+      <!-- 4. FIVE CULTURAL SHIFTS -->
+      <section id="shifts" class="section">
+        <span class="tag">4 · Cultural Shifts</span>
+        <h2>Five Cultural Shifts Shaping Gen Z</h2>
+
+        <h3>1 · Creativity as Currency</h3>
+        <p>Gen Z doesn't consume culture — they <strong>create</strong> it. Aesthetic mastery equals influence; influence equals income.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p>Over <strong>50%</strong> of Gen Zs identify as content creators (<a href="https://morningconsult.com/analysis/gen-z-creator-economy-report-2024/" target="_blank" rel="noopener noreferrer">Morning Consult, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>Creativity is no longer a talent — it's the new literacy, shaping status, opportunity and earning potential.</p>
+          </div>
+        </div>
+
+        <h3>2 · The Rise of the Side Hustle</h3>
+        <p>Financial independence means freedom, not luxury. Work is no longer linear but modular, flexible and personalized.</p>
+        
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p>According to recent data reflecting Gen Z's evolving economic behaviors, <strong>nearly half of this generation</strong> is engaging in multiple income streams, including side hustles and gig work, to supplement their earnings.</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>This trend underscores Gen Z's preference for financial flexibility and diversified income sources, which is shaping their approach to work and spending habits as they enter the workforce.</p>
+          </div>
+        </div>
+
+        <h3>3 · From Global to Glocal</h3>
+        <p>Digitally global yet emotionally rooted, Gen Z merges identity and connectivity. Heritage meets hype; authenticity meets algorithm.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p>7 in 10 Gen Zs say they're proud of their cultural roots <em>and</em> identify as global citizens (APM Global Youth Survey, 2024).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>The future belongs to the <strong>glocal mind</strong> — rooted in identity, but borderless in imagination.</p>
+          </div>
+        </div>
+
+        <h3>4 · Identity as Performance</h3>
+        <p>Identity has become fluid and multidimensional. They express, test and iterate who they are — transparently.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>61%</strong> of Gen Zs say they have different personas online versus offline (<a href="https://www.pewresearch.org/internet/2023/teens-social-media-and-technology-2023/" target="_blank" rel="noopener noreferrer">Pew Research Center, 2023</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>For them, authenticity means <strong>multiplicity</strong> — being coherent across contradictions, not reduced to one fixed version.</p>
+          </div>
+        </div>
+
+        <h3>5 · Learning by Doing</h3>
+        <p>Education has left the classroom. They learn through tutorials, peers and lived experience.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p>YouTube is ranked the <strong>#1 learning platform</strong> by Gen Z (<a href="https://www.oecd.org/education/education-and-skills-outlook-2024/" target="_blank" rel="noopener noreferrer">OECD, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>Learning is no longer preparation — it's <strong>participation</strong>, continuous and self-directed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. EMERGING CULTURAL CODES -->
+      <section id="codes" class="section">
+        <span class="tag">5 · Emerging Codes</span>
+        <h2>Emerging Cultural Codes</h2>
+
+        <h3>Gaming as a Social Blueprint</h3>
+        <p>For many Gen Zs, gaming is not escapism — it is a template for collaboration, strategy and world-building. Guilds, quests and open worlds rehearse how they approach teamwork, leadership and problem-solving in real life.</p>
+
+        <h3>Heritage Reloaded</h3>
+        <p>They remix cultural heritage with contemporary aesthetics: traditional patterns on streetwear, ancestral rituals on TikTok, local food in global formats. Roots are not nostalgic — they are raw material for reinvention.</p>
+
+        <h3>Appearance as Signal</h3>
+        <p>Style functions as a social interface — a way to signal values, affiliations and mood. A look can say "I care about sustainability", "I belong to this scene", or "I reject this norm" long before any words are spoken.</p>
+
+        <h3>English as Operating System</h3>
+        <p>For many, English is less a foreign language than a cultural operating system — the default interface for music, memes, tools and knowledge. It enables access and aspiration, while native languages continue to carry intimacy, humour and emotional nuance.</p>
+      </section>
+
+      <!-- 6. REDEFINING SYSTEMS -->
+      <section id="systems" class="section">
+        <span class="tag">6 · Systems</span>
+        <h2>Redefining the Systems</h2>
+
+        <h3>For Brands — From Persuasion to Participation</h3>
+        <p>Gen Z expects brands to act like humans — curious, honest, responsive. They reject perfection and reward authenticity.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>70%</strong> of Gen Z consumers prefer brands that feature real people rather than celebrities (<a href="https://www.nielsen.com/insights/2024/trust-in-advertising-report/" target="_blank" rel="noopener noreferrer">Nielsen, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>Brand power now flows from <strong>community</strong>, not visibility. Don't speak louder — speak closer.</p>
+          </div>
+        </div>
+
+        <h3>For Employers — From Structure to Purpose</h3>
+        <p>Gen Z is not simply entering the workforce — they're reshaping it at the exact moment when <strong>AI is being deployed at scale</strong>. They will be the first generation to experience AI not as a distant disruption, but as a daily collaborator.</p>
+        <p>They expect fairness, flexibility and fast-tracked recognition. They master digital tools instinctively and know that this fluency creates value — they want to <em>cash out</em> on their impact.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>64%</strong> of Gen Zs say pay should be based on <strong>impact and skill</strong>, not tenure (<a href="https://www.manpowergroup.com/workforce-insights/future-of-work/gen-z-survey" target="_blank" rel="noopener noreferrer">ManpowerGroup, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>Entry-level roles must evolve from execution to <strong>experimentation</strong> — labs for innovation where AI and human creativity meet. Pay scales must shift from seniority to performance and contribution.</p>
+          </div>
+        </div>
+
+        <h3>For Educators — From Teaching to Mentoring</h3>
+        <p>Education must meet Gen Z where they already learn: online, visual, interactive and on-demand.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>80%</strong> of Gen Zs say short-form videos help them retain information better than reading (<a href="https://unesdoc.unesco.org/ark:/48223/pf0000386150" target="_blank" rel="noopener noreferrer">UNESCO, 2023</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>The future educator is not a source of truth, but a <strong>curator of curiosity</strong> and learning paths — guiding learners who already have access to all information.</p>
+          </div>
+        </div>
+
+        <h3>For Society & Institutions — From Inclusion to Co-Creation</h3>
+        <p>Gen Z doesn't want token inclusion — they expect active collaboration. Participation means equal voice, not symbolic presence.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>68%</strong> of MENA Gen Zs say institutions "don't listen enough", but <strong>82%</strong> would engage in policymaking if invited (APM Youth Barometer, 2024).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>Engagement must move from <strong>representation</strong> to <strong>responsibility</strong>. They don't want a seat at the table — they are building a new one.</p>
+          </div>
+        </div>
+
+        <h3>For Communicators — From Broadcasting to Dialogue</h3>
+        <p>Communication is no longer a one-way act — it's a shared ecosystem. Gen Z has dismantled the old model of broadcasting and replaced it with <strong>conversation</strong>.</p>
+        <p>They talk back, remix messages and hold brands accountable in real time. They expect transparency, dialogue and participation — not polished monologues.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p><strong>78%</strong> of Gen Zs expect brands to "create spaces for two-way communication" rather than traditional advertising (<a href="https://www.edelman.com/trust/2024-trust-barometer" target="_blank" rel="noopener noreferrer">Edelman, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>The future of communication is <strong>mutual resonance</strong> — not transmission but connection, not volume but relevance.</p>
+          </div>
+        </div>
+        <p><strong>Implications:</strong></p>
+        <ul>
+          <li>Brands and institutions must act as <strong>facilitators of conversation</strong>, not just storytellers.</li>
+          <li>Communication must be <strong>visual-first</strong>, interactive and responsive.</li>
+          <li>Authenticity is no longer an aesthetic — it is a behavior and a practice.</li>
+        </ul>
+      </section>
+
+      <!-- 7. DESIGNERS → EXPLORERS -->
+      <section id="architects-explorers" class="section">
+        <span class="tag">7 · Future</span>
+        <h2>From Designers to Explorers</h2>
+        <p>Gen Z are the <strong>designers and shapers</strong> of new realities — redesigning how we live, learn and connect.</p>
+        <p>Generation Alpha will be the <strong>explorers</strong> — expanding humanity into new territories: AI, augmented reality, space and synthetic creativity.</p>
+        <div class="data-insight">
+          <div>
+            <div class="pill-title">Data</div>
+            <p>By 2035, around <strong>45%</strong> of Gen Alpha will work in hybrid AI-human environments (<a href="https://www.weforum.org/reports/the-future-of-jobs-report-2024/" target="_blank" rel="noopener noreferrer">World Economic Forum, 2024</a>).</p>
+          </div>
+          <div>
+            <div class="pill-title">Insight</div>
+            <p>The continuum between Z and Alpha is not generational — it is <strong>cognitive</strong>. If Gen Z rebuilt the world, Gen Alpha will reimagine its limits.</p>
+          </div>
+        </div>
+        <blockquote>Understanding this continuum is the first step toward shaping a future that truly resonates. For those ready to build, decode and engage with what comes next, the conversation begins now.</blockquote>
+      </section>
+
+      <!-- 8. ABOUT CATALYST IA -->
+      <section id="about-cia" class="section">
+        <span class="tag">8 · About</span>
+        <h2>About Catalyst Insight Agency</h2>
+        <p><strong>Catalyst Insight Agency (Catalyst IA)</strong> is a Casablanca-based boutique consultancy specializing in <strong>data, cultural insight and strategy</strong>. We help brands and institutions anticipate change through analytics, human understanding and creative foresight.</p>
+        <p>Our approach bridges quantitative rigor and cultural intelligence — decoding emerging behaviors, designing strategic roadmaps and translating insight into impact.</p>
+        <blockquote>Catalyst IA — Turning data into dialogue, and insight into evolution.</blockquote>
+      </section>
+
+      <!-- SOURCES -->
+      <section id="sources" class="section">
+        <span class="tag">Sources</span>
+        <h2>Sources & References</h2>
+
+        <h3>Catalyst IA Proprietary Research</h3>
+        <ul>
+          <li><strong>Catalyst IA Exploratory Study (2019)</strong> — "The Rise-Up Generation".</li>
+          <li><strong>Catalyst IA Quantitative Study (2022)</strong> — "Minding the Gap: How to Better Connect with MENA Gen Z – TikTok Case".</li>
+        </ul>
+
+        <h3>External Global Reports</h3>
+        <ul>
+          <li><a href="https://www2.deloitte.com/global/en/pages/about-deloitte/articles/genzmillennialsurvey.html" target="_blank" rel="noopener noreferrer">Deloitte Global Gen Z & Millennial Survey 2024</a></li>
+          <li><a href="https://www.bcg.com/publications/2024/future-of-work-for-gen-z" target="_blank" rel="noopener noreferrer">BCG – Future of Work for Gen Z 2024</a></li>
+          <li><a href="https://morningconsult.com/analysis/gen-z-creator-economy-report-2024/" target="_blank" rel="noopener noreferrer">Morning Consult – Gen Z Creator Economy Report 2024</a></li>
+          <li><a href="https://www.pewresearch.org/internet/2023/teens-social-media-and-technology-2023/" target="_blank" rel="noopener noreferrer">Pew Research Center – Teens, Social Media & Technology 2023</a></li>
+          <li><a href="https://www.nielsen.com/insights/2024/trust-in-advertising-report/" target="_blank" rel="noopener noreferrer">Nielsen – Global Trust in Advertising 2024</a></li>
+          <li><a href="https://www.oecd.org/education/education-and-skills-outlook-2024/" target="_blank" rel="noopener noreferrer">OECD – Education and Skills Outlook 2024</a></li>
+          <li><a href="https://unesdoc.unesco.org/ark:/48223/pf0000386150" target="_blank" rel="noopener noreferrer">UNESCO – Future of Learning Report 2023</a></li>
+          <li><a href="https://www.edelman.com/trust/2024-trust-barometer" target="_blank" rel="noopener noreferrer">Edelman – Trust Barometer 2024</a></li>
+          <li><a href="https://www.weforum.org/reports/the-future-of-jobs-report-2024/" target="_blank" rel="noopener noreferrer">World Economic Forum – Future of Jobs Report 2024</a></li>
+          <li><a href="https://www.vice.com/en/article/mena-youth-census-report-2022" target="_blank" rel="noopener noreferrer">Vice Media Insights – MENA Youth Census 2022</a></li>
+          <li><strong>APM Global Youth Survey (2024)</strong> — Cultural identity and global citizenship insights.</li>
+          <li><strong>APM Youth Barometer (2024)</strong> — MENA Youth Energy and Leadership.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <div class="share-container">
+    <a href="#" class="share-btn" id="share-link" title="Copy link to share">
+      🔗
+      <span class="share-tooltip">Copy link</span>
+    </a>
+    <a href="#" class="share-btn" id="download-pdf" title="Download as PDF">
+      📄
+      <span class="share-tooltip">Download PDF</span>
+    </a>
+  </div>
+
+  <a href="#" class="back-to-top">↑</a>
+
+  <footer class="footer">
+    © 2025 Catalyst Insight Agency · All rights reserved
+  </footer>
+
+  <script>
+    // Scroll animations and interactions
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+      const backToTop = document.querySelector('.back-to-top');
+      const progressBar = document.querySelector('.progress-bar');
+      const shareButtons = document.querySelectorAll('.share-btn');
+      
+      // Section reveal on scroll
+      const reveal = () => {
+        const trigger = window.innerHeight * 0.9;
+        sections.forEach((s) => {
+          const top = s.getBoundingClientRect().top;
+          if (top < trigger) s.classList.add("visible");
+        });
+      };
+      
+      // Progress bar and interactive elements
+      window.addEventListener("scroll", () => {
+        reveal();
+        
+        // Progress bar
+        const winHeight = window.innerHeight;
+        const docHeight = document.documentElement.scrollHeight;
+        const scrollTop = window.pageYOffset;
+        const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+        progressBar.style.width = scrollPercent + '%';
+        
+        // Back to top button + share buttons
+        if (window.pageYOffset > 300) {
+          backToTop.classList.add('visible');
+          shareButtons.forEach(btn => btn.classList.add('visible'));
+        } else {
+          backToTop.classList.remove('visible');
+          shareButtons.forEach(btn => btn.classList.remove('visible'));
+        }
+      });
+      
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+      
+      // Share functionality
+      document.getElementById('share-link').addEventListener('click', (e) => {
+        e.preventDefault();
+        const btn = e.currentTarget;
+        const tooltip = btn.querySelector('.share-tooltip');
+        const currentUrl = window.location.href;
+        navigator.clipboard.writeText(currentUrl).then(() => {
+          const originalText = tooltip.textContent;
+          tooltip.textContent = 'Link copied!';
+          setTimeout(() => {
+            tooltip.textContent = originalText;
+          }, 2000);
+        });
+      });
+      
+      // PDF download functionality (placeholder)
+      document.getElementById('download-pdf').addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('PDF export feature would be implemented here. For now, you can use your browser\'s "Print to PDF" function.');
+      });
+      
+      // Initial reveal
+      reveal();
+    });
+  </script>
+</body>
+</html>
